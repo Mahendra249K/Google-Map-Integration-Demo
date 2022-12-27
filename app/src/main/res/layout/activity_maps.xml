@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MapsActivity">
+
+
+
+    <fragment
+        android:id="@+id/mapp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="." />
+
+
+    <SearchView
+        android:id="@+id/searchLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search here..."
+        android:iconifiedByDefault="false"
+        android:layout_margin="10dp"
+        android:elevation="10dp"
+        android:background="@android:drawable/editbox_background"/>
+
+
+</RelativeLayout>
